@@ -1,58 +1,101 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#07130f" />
-  <meta name="description" content="ScoutIQ — Soccer scouting intelligence and role-adjusted player analytics." />
-  <title>ScoutIQ — Soccer Intelligence Platform</title>
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="#07130f" name="theme-color"/>
+<meta content="ScoutIQ — Soccer scouting intelligence and role-adjusted player analytics." name="description"/>
+<title>ScoutIQ — Soccer Intelligence Platform</title>
+<link href="styles.css" rel="stylesheet"/>
 </head>
 <body>
-  <div class="ambient"></div>
-  <header class="site-header">
-    <a href="#home" class="brand" aria-label="ScoutIQ home"><span class="brand-mark">S<span class="brand-dot">.</span></span><span>SCOUT<span class="brand-accent">IQ</span></span></a>
-    <nav aria-label="Primary navigation"><a href="#platform">Platform</a><a href="#analytics">Analytics</a><a href="#about">About</a></nav>
-    <a href="#analytics" class="header-cta">Explore demo <span aria-hidden="true">↗</span></a>
-    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
-  </header>
-  <main>
-    <section id="home" class="hero section-wrap">
-      <div class="hero-copy">
-        <div class="eyebrow"><span class="live-dot"></span> THE FUTURE OF FOOTBALL INTELLIGENCE <span class="eyebrow-line"></span></div>
-        <h1>THE GAME IS<br/>IN THE <em>DATA.</em></h1>
-        <p class="hero-description">Explore historical match intelligence, player scouting, and role-adjusted passing analytics built from real soccer event data.</p>
-        <div class="hero-actions"><a class="btn btn-primary" href="#analytics">Explore analytics <span>↗</span></a></div>
-        <div class="hero-proof"><span class="proof-icon">✳</span><span>BUILT FOR THE NEXT GENERATION OF SCOUTING</span></div>
-      </div>
-      <div class="hero-visual" aria-label="Stylized soccer pitch analytics visualization">
-        <div class="pitch-label"><span>SCOUTIQ / FIELD VISION</span><span>01 — 02</span></div>
-        <div class="pitch">
-          <div class="pitch-center-line"></div><div class="pitch-center-circle"></div><div class="pitch-box left"></div><div class="pitch-box right"></div>
-          <svg class="pitch-routes" viewBox="0 0 540 440" preserveAspectRatio="none" aria-hidden="true"><defs><marker id="arrow" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6" fill="none" stroke="#b8f45a" stroke-width="1.4"/></marker></defs><path d="M105 315 Q220 275 290 215 T445 112"/><path class="route-muted" d="M145 95 Q235 165 310 158 T425 232"/><path class="route-muted" d="M75 205 Q185 160 290 215"/></svg>
-          <span class="pitch-node n1"></span><span class="pitch-node n2"></span><span class="pitch-node n3"></span><span class="pitch-node n4"></span><span class="pitch-node n5"></span>
-          <div class="pitch-player-card"><span class="micro">PROGRESSION INDEX</span><strong>+24.8<span>m</span></strong><small>Progressive passing sequence</small></div>
-          <span class="pitch-coordinate">120 × 80 // TRACKING VIEW</span>
-        </div>
-        <div class="visual-bottom"><span><span class="status-dot"></span> MODEL ONLINE</span><span>POSSESSION ANALYSIS <b>↗</b></span></div>
-      </div>
-      <div class="hero-bottom"><span>INTELLIGENCE FOR EVERY TOUCH.</span><span>SCROLL TO EXPLORE ↓</span></div>
-    </section>
-    <section id="platform" class="section-wrap platform-section">
-      <div class="section-heading"><div><p class="kicker">01 / THE PLATFORM</p><h2>ONE MISSION.<br/><span>BETTER SCOUTING.</span></h2></div><p>ScoutIQ transforms historical match events into transparent, role-aware player scouting insights.</p></div>
-      <div class="platform-grid"><article class="feature-card analytics-card"><div class="feature-top"><span class="feature-icon">↗</span><span class="card-index">01 / ANALYTICS</span></div><div class="feature-graphic bars"><i style="--h:43%"></i><i style="--h:69%"></i><i style="--h:53%"></i><i style="--h:83%"></i><i style="--h:64%"></i><i style="--h:96%"></i><i style="--h:75%"></i><i style="--h:90%"></i><span>PERFORMANCE SIGNAL</span></div><h3>ScoutIQ <em>Analytics</em></h3><p>Scout smarter. Evaluate progression, passing efficiency and positional profiles using professional match data.</p><a href="https://scoutiq-analytics.streamlit.app/" class="text-link" target="_blank" rel="noopener noreferrer">View scouting dashboard <span>↗</span></a></article></div>
-    </section>
-    <section id="analytics" class="section-wrap analytics-section">
-      <div class="section-heading"><div><p class="kicker">02 / PLAYER INTELLIGENCE</p><h2>SEE BEYOND<br/><span>THE SCORELINE.</span></h2></div><p>Explore an interactive preview of the scouting interface, built around passing and progression metrics.</p></div>
-      <div class="dashboard"><div class="dashboard-head"><div><span class="tiny-label">SCOUTIQ / ANALYTICS</span><h3>Player scouting overview</h3></div><div class="demo-pill"><span class="status-dot"></span> INTERACTIVE DEMO · ILLUSTRATIVE DATA</div></div>
-        <div class="dashboard-toolbar"><label for="roleFilter">POSITION GROUP <select id="roleFilter"><option value="all">All midfielders</option><option value="Central Midfielder">Central midfielders</option><option value="Defensive Midfielder">Defensive midfielders</option><option value="Attacking Midfielder">Attacking midfielders</option><option value="Wide Midfielder">Wide midfielders</option></select></label><label for="playerSearch">SEARCH PLAYER <input id="playerSearch" type="search" placeholder="Search name or club..." autocomplete="off" /></label><span class="season-tag">PREMIER LEAGUE · 2015/16</span></div>
-        <div class="stat-grid"><div class="stat-tile"><span>PLAYERS IN VIEW</span><strong id="playerCount">08</strong><small>Sample scouting profiles</small></div><div class="stat-tile"><span>AVG. PASS ACCURACY</span><strong id="avgAccuracy">—</strong><small>Across visible players</small></div><div class="stat-tile"><span>AVG. PROGRESSIVE RATE</span><strong id="avgProgressive">—</strong><small>Across visible players</small></div><div class="stat-tile highlight-tile"><span>TOP ROLE SCORE</span><strong id="topScore">—</strong><small id="topPlayer">Illustrative model score</small></div></div>
-        <div class="dashboard-content"><div class="table-panel"><div class="panel-heading"><h4>Scouting leaderboard</h4><span>ROLE-ADJUSTED / DEMO</span></div><div class="table-scroll"><table><thead><tr><th>PLAYER</th><th>CLUB</th><th>ROLE</th><th>PASS %</th><th>PROG %</th><th>INDEX</th></tr></thead><tbody id="playerTable"></tbody></table></div><p class="table-note">Demo sample based on previously explored 2015/16 player metrics. Scores shown here are illustrative; this is not a live data feed.</p></div><div class="profile-panel"><div class="panel-heading"><h4>Player snapshot</h4><span>SELECT A ROW</span></div><div class="profile-initials" id="profileInitials">MC</div><h4 id="profileName">Michael Carrick</h4><p id="profileClub">Manchester United · Central Midfielder</p><div class="profile-metric"><span>PASS ACCURACY</span><b id="profileAccuracy">86.62%</b></div><div class="meter"><i id="accuracyMeter"></i></div><div class="profile-metric"><span>PROGRESSIVE RATE</span><b id="profileProgressive">24.39%</b></div><div class="meter"><i id="progressMeter"></i></div><div class="profile-score"><span>ROLE-ADJUSTED INDEX</span><strong id="profileScore">90.22</strong></div></div></div>
-      </div>
-    </section>
-    <section id="about" class="section-wrap about-section"><div class="about-top"><p class="kicker">03 / THE VISION</p><h2>BUILDING THE NEXT<br/><em>PLAYBOOK.</em></h2><p>ScoutIQ is a soccer scouting analytics research project combining data engineering, applied statistics, and software development to make player evaluation more transparent.</p></div><div class="tech-list"><span>PYTHON</span><span>PANDAS</span><span>STATSBOMB</span><span>SQL</span><span>STREAMLIT</span><span>ESP32</span><span>JAVASCRIPT</span></div><div class="about-bottom"><div><span class="tiny-label">SCOUTIQ / PROJECT CONCEPT</span><p>Understand the game. Improve the player.</p></div><a class="btn btn-primary" href="#home">Back to top ↑</a></div></section>
-  </main>
-  <footer><a href="#home" class="brand"><span class="brand-mark">S<span class="brand-dot">.</span></span><span>SCOUT<span class="brand-accent">IQ</span></span></a><span>© <span id="year"></span> SCOUTIQ. SCOUTING ANALYTICS RESEARCH PROJECT.</span><span>DESIGNED FOR THE BEAUTIFUL GAME.</span></footer>
-  <script src="script.js"></script>
+<div class="ambient"></div>
+<header class="site-header">
+<a aria-label="ScoutIQ home" class="brand" href="#home"><span class="brand-mark">S<span class="brand-dot">.</span></span><span>SCOUT<span class="brand-accent">IQ</span></span></a>
+<nav aria-label="Primary navigation"><a href="#platform">Platform</a><a href="#analytics">Analytics</a><a href="#about">About</a></nav>
+<a class="header-cta" href="#analytics">Explore demo <span aria-hidden="true">↗</span></a>
+<button aria-expanded="false" aria-label="Toggle menu" class="menu-toggle">☰</button>
+</header>
+<main>
+<section class="hero section-wrap" id="home">
+<div class="hero-copy">
+<div class="eyebrow"><span class="live-dot"></span> THE FUTURE OF FOOTBALL INTELLIGENCE <span class="eyebrow-line"></span></div>
+<h1>THE GAME IS<br/>IN THE <em>DATA.</em></h1>
+<p class="hero-description">Explore historical match intelligence, player scouting, and role-adjusted passing analytics built from real soccer event data.</p>
+<div class="hero-actions"><a class="btn btn-primary" href="#analytics">Explore analytics <span>↗</span></a></div>
+<div class="hero-proof"><span class="proof-icon">✳</span><span>BUILT FOR THE NEXT GENERATION OF SCOUTING</span></div>
+</div>
+<div aria-label="Stylized soccer pitch analytics visualization" class="hero-visual">
+<div class="pitch-label"><span>SCOUTIQ / FIELD VISION</span><span>01 — 02</span></div>
+<div class="pitch">
+<div class="pitch-center-line"></div><div class="pitch-center-circle"></div><div class="pitch-box left"></div><div class="pitch-box right"></div>
+<svg aria-hidden="true" class="pitch-routes" preserveaspectratio="none" viewbox="0 0 540 440"><defs><marker id="arrow" markerheight="7" markerwidth="7" orient="auto" refx="5" refy="3"><path d="M0,0 L6,3 L0,6" fill="none" stroke="#b8f45a" stroke-width="1.4"></path></marker></defs><path d="M105 315 Q220 275 290 215 T445 112"></path><path class="route-muted" d="M145 95 Q235 165 310 158 T425 232"></path><path class="route-muted" d="M75 205 Q185 160 290 215"></path></svg>
+<span class="pitch-node n1"></span><span class="pitch-node n2"></span><span class="pitch-node n3"></span><span class="pitch-node n4"></span><span class="pitch-node n5"></span>
+<div class="pitch-player-card"><span class="micro">PROGRESSION INDEX</span><strong>+24.8<span>m</span></strong><small>Progressive passing sequence</small></div>
+<span class="pitch-coordinate">120 × 80 // TRACKING VIEW</span>
+</div>
+<div class="visual-bottom"><span><span class="status-dot"></span> MODEL ONLINE</span><span>POSSESSION ANALYSIS <b>↗</b></span></div>
+</div>
+<div class="hero-bottom"><span>INTELLIGENCE FOR EVERY TOUCH.</span><span>SCROLL TO EXPLORE ↓</span></div>
+</section>
+<section class="section-wrap platform-section" id="platform">
+<div class="section-heading"><div><p class="kicker">01 / THE PLATFORM</p><h2>ONE MISSION.<br/><span>BETTER SCOUTING.</span></h2></div><p>ScoutIQ transforms historical match events into transparent, role-aware player scouting insights.</p></div>
+<div class="platform-grid"><article class="feature-card analytics-card"><div class="feature-top"><span class="feature-icon">↗</span><span class="card-index">01 / ANALYTICS</span></div><div class="feature-graphic bars"><i style="--h:43%"></i><i style="--h:69%"></i><i style="--h:53%"></i><i style="--h:83%"></i><i style="--h:64%"></i><i style="--h:96%"></i><i style="--h:75%"></i><i style="--h:90%"></i><span>PERFORMANCE SIGNAL</span></div><h3>ScoutIQ <em>Analytics</em></h3><p>Scout smarter. Evaluate progression, passing efficiency and positional profiles using professional match data.</p><a class="text-link" href="https://scoutiq-analytics.streamlit.app/" rel="noopener noreferrer" target="_blank">View scouting dashboard <span>↗</span></a></article><article class="feature-card research-card">
+<div class="feature-top">
+<span class="feature-icon">◎</span>
+<span class="card-index">02 / RESEARCH</span>
+</div>
+<div aria-hidden="true" class="feature-graphic research-graphic">
+<div class="research-graphic-label">
+      ROLE-ADJUSTED EVALUATION
+    </div>
+<div class="research-graphic-lines">
+<span style="--w:84%"></span>
+<span style="--w:67%"></span>
+<span style="--w:92%"></span>
+<span style="--w:73%"></span>
+</div>
+<div class="research-graphic-footer">
+      TRANSPARENT METHODOLOGY
+    </div>
+</div>
+<h3>Scouting <em>Methodology</em></h3>
+<p>
+    Discover how match-event data becomes
+    role-aware passing evaluations, with
+    transparent scoring and reliability analysis.
+  </p>
+<a class="text-link" href="https://scoutiq-analytics.streamlit.app/" rel="noopener noreferrer" target="_blank">
+    Explore research methodology
+    <span>↗</span>
+</a>
+</article></div><div aria-label="ScoutIQ research overview" class="research-metrics">
+<div class="research-metric">
+<strong>200</strong>
+<span>PLAYER-CLUB PROFILES</span>
+</div>
+<div class="research-metric">
+<strong>02</strong>
+<span>LEAGUES STUDIED</span>
+</div>
+<div class="research-metric">
+<strong>10K</strong>
+<span>BOOTSTRAP REPLICATES</span>
+</div>
+</div>
+</section>
+<section class="section-wrap analytics-section" id="analytics">
+<div class="section-heading"><div><p class="kicker">02 / PLAYER INTELLIGENCE</p><h2>SEE BEYOND<br/><span>THE SCORELINE.</span></h2></div><p>Explore an interactive preview of the scouting interface, built around passing and progression metrics.</p></div>
+<div class="dashboard"><div class="dashboard-head"><div><span class="tiny-label">SCOUTIQ / ANALYTICS</span><h3>Player scouting overview</h3></div><div class="demo-pill"><span class="status-dot"></span> INTERACTIVE DEMO · ILLUSTRATIVE DATA</div></div>
+<div class="dashboard-toolbar"><label for="roleFilter">POSITION GROUP <select id="roleFilter"><option value="all">All midfielders</option><option value="Central Midfielder">Central midfielders</option><option value="Defensive Midfielder">Defensive midfielders</option><option value="Attacking Midfielder">Attacking midfielders</option><option value="Wide Midfielder">Wide midfielders</option></select></label><label for="playerSearch">SEARCH PLAYER <input autocomplete="off" id="playerSearch" placeholder="Search name or club..." type="search"/></label><span class="season-tag">PREMIER LEAGUE · 2015/16</span></div>
+<div class="stat-grid"><div class="stat-tile"><span>PLAYERS IN VIEW</span><strong id="playerCount">08</strong><small>Sample scouting profiles</small></div><div class="stat-tile"><span>AVG. PASS ACCURACY</span><strong id="avgAccuracy">—</strong><small>Across visible players</small></div><div class="stat-tile"><span>AVG. PROGRESSIVE RATE</span><strong id="avgProgressive">—</strong><small>Across visible players</small></div><div class="stat-tile highlight-tile"><span>TOP ROLE SCORE</span><strong id="topScore">—</strong><small id="topPlayer">Illustrative model score</small></div></div>
+<div class="dashboard-content"><div class="table-panel"><div class="panel-heading"><h4>Scouting leaderboard</h4><span>ROLE-ADJUSTED / DEMO</span></div><div class="table-scroll"><table><thead><tr><th>PLAYER</th><th>CLUB</th><th>ROLE</th><th>PASS %</th><th>PROG %</th><th>INDEX</th></tr></thead><tbody id="playerTable"></tbody></table></div><p class="table-note">Demo sample based on previously explored 2015/16 player metrics. Scores shown here are illustrative; this is not a live data feed.</p></div><div class="profile-panel"><div class="panel-heading"><h4>Player snapshot</h4><span>SELECT A ROW</span></div><div class="profile-initials" id="profileInitials">MC</div><h4 id="profileName">Michael Carrick</h4><p id="profileClub">Manchester United · Central Midfielder</p><div class="profile-metric"><span>PASS ACCURACY</span><b id="profileAccuracy">86.62%</b></div><div class="meter"><i id="accuracyMeter"></i></div><div class="profile-metric"><span>PROGRESSIVE RATE</span><b id="profileProgressive">24.39%</b></div><div class="meter"><i id="progressMeter"></i></div><div class="profile-score"><span>ROLE-ADJUSTED INDEX</span><strong id="profileScore">90.22</strong></div></div></div>
+</div>
+</section>
+<section class="section-wrap about-section" id="about"><div class="about-top"><p class="kicker">03 / THE VISION</p><h2>BUILDING THE NEXT<br/><em>PLAYBOOK.</em></h2><p>ScoutIQ is a soccer scouting analytics research project combining data engineering, applied statistics, and software development to make player evaluation more transparent.</p></div><div class="tech-list"><span>PYTHON</span><span>PANDAS</span><span>STATSBOMB</span><span>SQL</span><span>STREAMLIT</span><span></span><span>JAVASCRIPT</span></div><div class="about-bottom"><div><span class="tiny-label">SCOUTIQ / PROJECT CONCEPT</span><p>Understand the game. Improve the player.</p></div><a class="btn btn-primary" href="#home">Back to top ↑</a></div></section>
+</main>
+<footer><a class="brand" href="#home"><span class="brand-mark">S<span class="brand-dot">.</span></span><span>SCOUT<span class="brand-accent">IQ</span></span></a><span>© <span id="year"></span> SCOUTIQ. SCOUTING ANALYTICS RESEARCH PROJECT.</span><span>DESIGNED FOR THE BEAUTIFUL GAME.</span></footer>
+<script src="script.js"></script>
 </body>
 </html>
