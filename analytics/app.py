@@ -41,6 +41,14 @@ page = st.sidebar.radio(
     ]
 )
 
+st.sidebar.divider()
+
+st.sidebar.link_button(
+    "↗ ScoutIQ Main Website",
+    "https://xidolwisdom.github.io/ScoutIQ/"
+)
+
+
 if page == "Overview":
 
     st.header("Scouting Overview")
