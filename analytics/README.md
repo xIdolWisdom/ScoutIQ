@@ -2,6 +2,10 @@
 
 A research-driven soccer scouting application built with Python, Pandas, and Streamlit.
 
+## Live Dashboard
+
+https://scoutiq-analytics.streamlit.app/
+
 ## Overview
 
 ScoutIQ evaluates midfield passing performance using StatsBomb open event data.
@@ -66,7 +70,7 @@ Install a compatible Python version, then run:
 
 ## Project Status
 
-Research MVP complete. Deployment preparation ongoing.
+Research MVP complete. Streamlit dashboard deployed.
 
 ## Limitations
 
