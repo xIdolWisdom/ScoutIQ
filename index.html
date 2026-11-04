@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#07130f" />
-  <meta name="description" content="ScoutIQ — Soccer intelligence, player scouting and connected training analytics." />
+  <meta name="description" content="ScoutIQ — Soccer scouting intelligence and role-adjusted player analytics." />
   <title>ScoutIQ — Soccer Intelligence Platform</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -12,7 +12,7 @@
   <div class="ambient"></div>
   <header class="site-header">
     <a href="#home" class="brand" aria-label="ScoutIQ home"><span class="brand-mark">S<span class="brand-dot">.</span></span><span>SCOUT<span class="brand-accent">IQ</span></span></a>
-    <nav aria-label="Primary navigation"><a href="#platform">Platform</a><a href="#analytics">Analytics</a><a href="#lab">ScoutIQ Lab</a><a href="#about">About</a></nav>
+    <nav aria-label="Primary navigation"><a href="#platform">Platform</a><a href="#analytics">Analytics</a><a href="#about">About</a></nav>
     <a href="#analytics" class="header-cta">Explore demo <span aria-hidden="true">↗</span></a>
     <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
   </header>
@@ -21,8 +21,8 @@
       <div class="hero-copy">
         <div class="eyebrow"><span class="live-dot"></span> THE FUTURE OF FOOTBALL INTELLIGENCE <span class="eyebrow-line"></span></div>
         <h1>THE GAME IS<br/>IN THE <em>DATA.</em></h1>
-        <p class="hero-description">From professional player scouting to connected training hardware. One platform built to turn every pass into an insight.</p>
-        <div class="hero-actions"><a class="btn btn-primary" href="#analytics">Explore analytics <span>↗</span></a><a class="btn btn-outline" href="#lab">Discover ScoutIQ Lab <span>→</span></a></div>
+        <p class="hero-description">Explore historical match intelligence, player scouting, and role-adjusted passing analytics built from real soccer event data.</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="#analytics">Explore analytics <span>↗</span></a></div>
         <div class="hero-proof"><span class="proof-icon">✳</span><span>BUILT FOR THE NEXT GENERATION OF SCOUTING</span></div>
       </div>
       <div class="hero-visual" aria-label="Stylized soccer pitch analytics visualization">
@@ -39,8 +39,8 @@
       <div class="hero-bottom"><span>INTELLIGENCE FOR EVERY TOUCH.</span><span>SCROLL TO EXPLORE ↓</span></div>
     </section>
     <section id="platform" class="section-wrap platform-section">
-      <div class="section-heading"><div><p class="kicker">01 / THE PLATFORM</p><h2>ONE GAME.<br/><span>TWO PERSPECTIVES.</span></h2></div><p>ScoutIQ combines historical match intelligence with connected, real-world training data.</p></div>
-      <div class="platform-grid"><article class="feature-card analytics-card"><div class="feature-top"><span class="feature-icon">↗</span><span class="card-index">01 / ANALYTICS</span></div><div class="feature-graphic bars"><i style="--h:43%"></i><i style="--h:69%"></i><i style="--h:53%"></i><i style="--h:83%"></i><i style="--h:64%"></i><i style="--h:96%"></i><i style="--h:75%"></i><i style="--h:90%"></i><span>PERFORMANCE SIGNAL</span></div><h3>ScoutIQ <em>Analytics</em></h3><p>Scout smarter. Evaluate progression, passing efficiency and positional profiles using professional match data.</p><a href="https://scoutiq-analytics.streamlit.app/" class="text-link" target="_blank" rel="noopener noreferrer">View scouting dashboard <span>↗</span></a></article><article class="feature-card lab-card"><div class="feature-top"><span class="feature-icon">⌁</span><span class="card-index">02 / CONNECTED LAB</span></div><div class="feature-graphic radar"><div class="radar-ring r1"></div><div class="radar-ring r2"></div><div class="radar-ring r3"></div><div class="radar-core"></div><span class="radar-signal"></span><span>IMPACT DETECTED</span></div><h3>ScoutIQ <em>Lab</em></h3><p>Train with purpose. Sensor-enabled passing targets capture impacts and turn practice sessions into measurable progress.</p><a href="#lab" class="text-link">View connected training <span>↗</span></a></article></div>
+      <div class="section-heading"><div><p class="kicker">01 / THE PLATFORM</p><h2>ONE MISSION.<br/><span>BETTER SCOUTING.</span></h2></div><p>ScoutIQ transforms historical match events into transparent, role-aware player scouting insights.</p></div>
+      <div class="platform-grid"><article class="feature-card analytics-card"><div class="feature-top"><span class="feature-icon">↗</span><span class="card-index">01 / ANALYTICS</span></div><div class="feature-graphic bars"><i style="--h:43%"></i><i style="--h:69%"></i><i style="--h:53%"></i><i style="--h:83%"></i><i style="--h:64%"></i><i style="--h:96%"></i><i style="--h:75%"></i><i style="--h:90%"></i><span>PERFORMANCE SIGNAL</span></div><h3>ScoutIQ <em>Analytics</em></h3><p>Scout smarter. Evaluate progression, passing efficiency and positional profiles using professional match data.</p><a href="https://scoutiq-analytics.streamlit.app/" class="text-link" target="_blank" rel="noopener noreferrer">View scouting dashboard <span>↗</span></a></article></div>
     </section>
     <section id="analytics" class="section-wrap analytics-section">
       <div class="section-heading"><div><p class="kicker">02 / PLAYER INTELLIGENCE</p><h2>SEE BEYOND<br/><span>THE SCORELINE.</span></h2></div><p>Explore an interactive preview of the scouting interface, built around passing and progression metrics.</p></div>
@@ -50,12 +50,9 @@
         <div class="dashboard-content"><div class="table-panel"><div class="panel-heading"><h4>Scouting leaderboard</h4><span>ROLE-ADJUSTED / DEMO</span></div><div class="table-scroll"><table><thead><tr><th>PLAYER</th><th>CLUB</th><th>ROLE</th><th>PASS %</th><th>PROG %</th><th>INDEX</th></tr></thead><tbody id="playerTable"></tbody></table></div><p class="table-note">Demo sample based on previously explored 2015/16 player metrics. Scores shown here are illustrative; this is not a live data feed.</p></div><div class="profile-panel"><div class="panel-heading"><h4>Player snapshot</h4><span>SELECT A ROW</span></div><div class="profile-initials" id="profileInitials">MC</div><h4 id="profileName">Michael Carrick</h4><p id="profileClub">Manchester United · Central Midfielder</p><div class="profile-metric"><span>PASS ACCURACY</span><b id="profileAccuracy">86.62%</b></div><div class="meter"><i id="accuracyMeter"></i></div><div class="profile-metric"><span>PROGRESSIVE RATE</span><b id="profileProgressive">24.39%</b></div><div class="meter"><i id="progressMeter"></i></div><div class="profile-score"><span>ROLE-ADJUSTED INDEX</span><strong id="profileScore">90.22</strong></div></div></div>
       </div>
     </section>
-    <section id="lab" class="section-wrap lab-section"><div class="section-heading"><div><p class="kicker">03 / CONNECTED TRAINING</p><h2>FROM PRACTICE<br/><span>TO PROOF.</span></h2></div><p>ScoutIQ Lab connects impact-sensing targets to training analytics. Test the experience with the simulator below.</p></div>
-      <div class="lab-dashboard"><div class="lab-left"><div class="lab-header"><span class="tiny-label">SCOUTIQ LAB / TRAINING SESSION</span><span class="demo-pill"><span class="status-dot"></span> SIMULATION MODE</span></div><h3>Passing target <span>01</span></h3><p>Simulate hits and misses to preview how training feedback could work once the ESP32 hardware is connected.</p><div class="target-wrap"><button id="targetButton" class="target" aria-label="Simulate successful target hit"><span class="target-ring outer"></span><span class="target-ring middle"></span><span class="target-ring inner"></span><span class="target-center">+</span></button><span class="target-caption">CLICK TARGET TO REGISTER A HIT</span></div><div class="lab-actions"><button id="missButton" class="btn btn-outline">Record miss <span>×</span></button><button id="resetButton" class="btn btn-subtle">Reset session <span>↺</span></button></div></div><div class="lab-right"><div class="lab-metric"><span>TOTAL ATTEMPTS</span><strong id="attempts">0</strong></div><div class="lab-metric"><span>SUCCESSFUL HITS</span><strong id="hits">0</strong></div><div class="lab-metric"><span>ACCURACY</span><strong id="hitRate">0<span>%</span></strong></div><div class="lab-log"><div class="panel-heading"><h4>Session activity</h4><span>LIVE PREVIEW</span></div><ul id="sessionLog"><li><span class="log-icon neutral">·</span><span>Ready for your first attempt</span><time>—</time></li></ul></div><p class="lab-disclaimer">This is a browser simulation, not a connected sensor. A vibration module can detect hits, but misses require separate recording or detection.</p></div></div>
-    </section>
-    <section id="about" class="section-wrap about-section"><div class="about-top"><p class="kicker">04 / THE VISION</p><h2>BUILDING THE NEXT<br/><em>PLAYBOOK.</em></h2><p>ScoutIQ is a hands-on sports technology project combining data engineering, applied analytics, software development and embedded hardware.</p></div><div class="tech-list"><span>PYTHON</span><span>PANDAS</span><span>STATSBOMB</span><span>SQL</span><span>STREAMLIT</span><span>ESP32</span><span>JAVASCRIPT</span></div><div class="about-bottom"><div><span class="tiny-label">SCOUTIQ / PROJECT CONCEPT</span><p>Understand the game. Improve the player.</p></div><a class="btn btn-primary" href="#home">Back to top ↑</a></div></section>
+    <section id="about" class="section-wrap about-section"><div class="about-top"><p class="kicker">03 / THE VISION</p><h2>BUILDING THE NEXT<br/><em>PLAYBOOK.</em></h2><p>ScoutIQ is a soccer scouting analytics research project combining data engineering, applied statistics, and software development to make player evaluation more transparent.</p></div><div class="tech-list"><span>PYTHON</span><span>PANDAS</span><span>STATSBOMB</span><span>SQL</span><span>STREAMLIT</span><span>ESP32</span><span>JAVASCRIPT</span></div><div class="about-bottom"><div><span class="tiny-label">SCOUTIQ / PROJECT CONCEPT</span><p>Understand the game. Improve the player.</p></div><a class="btn btn-primary" href="#home">Back to top ↑</a></div></section>
   </main>
-  <footer><a href="#home" class="brand"><span class="brand-mark">S<span class="brand-dot">.</span></span><span>SCOUT<span class="brand-accent">IQ</span></span></a><span>© <span id="year"></span> SCOUTIQ. CONCEPT DEMONSTRATION.</span><span>DESIGNED FOR THE BEAUTIFUL GAME.</span></footer>
+  <footer><a href="#home" class="brand"><span class="brand-mark">S<span class="brand-dot">.</span></span><span>SCOUT<span class="brand-accent">IQ</span></span></a><span>© <span id="year"></span> SCOUTIQ. SCOUTING ANALYTICS RESEARCH PROJECT.</span><span>DESIGNED FOR THE BEAUTIFUL GAME.</span></footer>
   <script src="script.js"></script>
 </body>
 </html>
