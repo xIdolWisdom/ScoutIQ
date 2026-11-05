@@ -20,6 +20,18 @@ The application includes 200 player-club profiles from the 2015/16 Premier Leagu
 - Barcelona longitudinal passing study
 - Research methodology and limitations
 
+## Research Documentation
+
+- [Research Methodology](research/methodology.md)
+- [Research Findings](research/findings.md)
+
+The published scoring and ranking layer has been
+independently reconstructed for all 200 profiles.
+Archived research artifact integrity has been
+verified against nine recorded SHA-256 checksums.
+The complete upstream raw-event processing pipeline
+has not yet been independently reproduced.
+
 ## Passing Index V2
 
 | Component | Weight |

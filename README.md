@@ -15,6 +15,8 @@ application and a separate experimental hardware concept.
 - **Project website:** https://xidolwisdom.github.io/ScoutIQ/
 - **Live Analytics dashboard:** https://scoutiq-analytics.streamlit.app/
 - **Analytics documentation:** [analytics/README.md](analytics/README.md)
+- **Research methodology:** [Methodology](analytics/research/methodology.md)
+- **Research findings:** [Findings](analytics/research/findings.md)
 
 ## ScoutIQ Analytics
 
@@ -51,17 +53,20 @@ Bootstrap analysis uses 10,000 replicates to estimate
 passing accuracy uncertainty, not uncertainty in
 Passing Index V2 scores or rankings.
 
-For methodology, dataset coverage, and limitations,
-see the [Analytics README](analytics/README.md).
+For detailed scoring, reliability, and reproducibility,
+see the [Research Methodology](analytics/research/methodology.md).
+For descriptive results and player case studies,
+see the [Research Findings](analytics/research/findings.md).
+For application setup, see the [Analytics README](analytics/README.md).
 
 ## ScoutIQ Lab
 
 ScoutIQ Lab is an experimental sports technology concept
 exploring an ESP32-based passing-drill measurement system.
 
-The project website includes an illustrative Lab interface.
-It should not be interpreted as a deployed, validated
-hardware measurement system.
+ScoutIQ Lab is a separate experimental development track.
+It is not presented as a deployed or validated hardware
+measurement system on the public Analytics website.
 
 Analytics and Lab are separate development tracks.
 
